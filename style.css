@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:0;
+}
+.farmcart{
+    font-size: 4rem;
+    font-family: 'Lobster', cursive;
+    color:green;
+    
+
+}
+.farmcart:hover{
+    color: rgb(0, 0, 0);
+}
+.nav-link{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    text-transform: uppercase;
+    background-color:lavender;
+}
+.nav-link:hover{
+    color:black;
+}
+.search{
+    height: 40px;
+    width: 80%;
+    border-radius: 60px;
+    outline: none;
+    margin-right:-35px;
+    border: 2px solid burlywood;
+}
+.btn0{
+    height: 40px;
+    width: 40%;
+    outline: none;
+    border: none;
+    background:chartreuse;
+    color:black;
+    border-radius: 60px;
+    font-weight: 700;
+}
+.picture{
+    background: url(./pic.jpg)no-repeat;
+    height: 70vh;
+    width: 50%;
+}
