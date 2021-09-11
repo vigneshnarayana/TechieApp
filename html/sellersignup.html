@@ -52,11 +52,20 @@
                 <div class="col">
                     <div class="form-group row">
                         <label for="inputname" class="col-sm-2 col-form-label">
-                            <h5 style="color:black; "><b>Name</b> </h5>
+                            <h5 style="color:black; "><b>First Name</b> </h5>
                         </label>
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" id="inputName" onkeyup="checkregname()" placeholder="CustomerName">
+                            <input type="text" class="form-control" id="inputName" onkeyup="checkregname()" placeholder="Name">
                             <p class="text-danger" id="alertregname" ></p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputaddress" class="col-sm-2 col-form-label">
+                            <h5 style="color:black; "><b>Last Name</b> </h5>
+                        </label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" id="inputlastname"
+                                   placeholder="Last Name">
                         </div>
                     </div>
                     <div class="form-group row">
@@ -69,15 +78,7 @@
                                    <p class="text-danger" id="alertregphone" ></p>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label for="inputaddress" class="col-sm-2 col-form-label">
-                            <h5 style="color:black; "><b>Address</b> </h5>
-                        </label>
-                        <div class="col-sm-5">
-                            <input type="text" class="form-control" id="inputAddress"
-                                   placeholder="CustomerAddress">
-                        </div>
-                    </div>
+                   
                     <div class="form-group row">
                         <label for="inputpin" class="col-sm-2 col-form-label">
                             <h5 style="color:black; "><b>Pin Code</b> </h5>
@@ -148,28 +149,29 @@
         const name = document.getElementById('inputName').value;
         const email = document.getElementById('inputEmail').value;
         const phone = document.getElementById('inputPhone').value;
-        const address = document.getElementById('inputAddress').value;
+        const lastname = document.getElementById('inputlastname').value;
         const pin = document.getElementById('inputNumber').value;
         const password = document.getElementById('inputPassword').value;
 
-   
+     debugger;
         const Data = {
-            url: 'http://localhost:3004/Regi',
+            url: 'http://localhost:3005/sellerRegi',
             data: {
-                'name': name,
-                'password': password,
+                'firstname': name,
+                'lastname':lastname,
+                'email': email,
                 'phonenumber': phone,
-                'email': email
-             
+                'pincode':pin,
+                'password': password
             }
         };
 
 
         postData(Data.url, Data.data)
-            .then(data => console.log(JSON.stringify(data)))
-    .catch(error => console.error(error));
+       .then(data => console.log(JSON.stringify(data)))
+         .catch(error => console.error(error));
         alert("Successfully created account");
-        window.location="login.html";
+        window.location="/html/sellerlogin.html";
     }
 
     function checkregmail(){

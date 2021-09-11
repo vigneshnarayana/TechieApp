@@ -78,11 +78,12 @@
         
                 function loginClick(){
                     console.log('entered into click');
+                    alert("login")
                
                     const email=document.getElementById('inputEmail').value;
                     const password=document.getElementById('inputPassword').value;
 
-                    fetch("http://localhost:3004/Regi/"+email)
+                    fetch("http://localhost:3005/sellerRegi/"+email)
                     .then(response => response.json())
                     .then(data => {
                         console.log(data)
