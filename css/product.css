@@ -1,0 +1,29 @@
+#{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.farmcartTechie{
+    height:0%;
+    width: min-content;
+}
+.farmcart{
+    font-size: 4rem;
+    font-family: 'Lobster', cursive;
+    color:green;
+}
+.farmcart:hover{
+    color: rgb(0, 0, 0);
+}
+.nav-item{
+    padding-right: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-style: oblique;
+    text-transform: uppercase;
+    background-color:lavender;
+}
+.nav-link:hover{
+    color:green;
