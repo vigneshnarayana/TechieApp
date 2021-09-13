@@ -169,7 +169,7 @@
     }
     function checkregname(){
     console.log("entered into check name");
-    var decimal=  /^[a-z0-9_-]{3,15}$/;
+    var decimal=  /^[a-zA-Z0-9_-]{5,15}$/;
     const element=document.getElementById('inputName');
     const email=element.value;
     if(email.match(decimal)){
@@ -179,14 +179,14 @@
     }
     else{
         console.log("notmatch");
-        document.getElementById('alertregname').innerHTML=`Username must be lowercase and have atleast 5 letters`;
+        document.getElementById('alertregname').innerHTML=`Username must be have atleast 5 letters`;
         document.getElementById('sign').disabled = true;
     }
 }
 
 function checkregphone(){
     console.log("entered into check name");
-    var decimal=  /^[2-9]{2}[0-9]{8}$/;
+    var decimal=  /^[2-9]{1}[0-9]{9}$/;
     const element=document.getElementById('inputPhone');
     const email=element.value;
     if(email.match(decimal)){
