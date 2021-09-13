@@ -5,13 +5,54 @@
 }
 .farmcart{
     font-size: 4rem;
-    font-family: 'Lobster', cursive;
-    color:green;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: green;
     
+
+}
+#navbar{
+    top: 0;
+    left: 0;
+    z-index: 100;
 
 }
 .farmcart:hover{
     color: rgb(0, 0, 0);
+}
+.card-m{
+    color: indigo;
+    font-style: oblique;
+
+}
+.ab{
+    color:crimson;
+    font-weight: 300;
+    background-color:black;
+}
+.bw{
+    color:brown;
+    background-color: black;
+}
+.bq{
+    color:white;
+    background-color:brown;
+}
+.bo{
+    height: 40px;
+    width: 100%;
+    border-radius: 60px;
+    outline: none;
+    margin-right: -35px;
+    background:cadetblue;
+    color:black;
+    font-weight: 700;
+}
+.bo:hover{
+    color:black;
+}
+.he{
+    color:darkgreen;
+    font-weight: 400;
 }
 .nav-link{
     margin-right: 10px;
@@ -20,10 +61,10 @@
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: oblique;
     text-transform: uppercase;
-    background-color:lavender;
+    background-color:honeydew;
 }
 .nav-link:hover{
-    color:black;
+    color:green;
 }
 .search{
     height: 40px;
@@ -35,14 +76,64 @@
 }
 .btn0{
     height: 40px;
-    width: 40%;
+    width: 100%;
+    border-radius: 60px;
     outline: none;
-    border: none;
+    margin-right: -35px;
     background:chartreuse;
     color:black;
-    border-radius: 60px;
     font-weight: 700;
 }
+.dropdown-menu{
+    background-color:honeydew;
+    text-transform:inherit;
+}
+.dropdown-item{
+    font-size: 2rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:green;
+}
+.main h1{
+    font-size: 4em;
+    font-weight: 700;
+}
+.btn1{
+    heigth: 45px;
+    width: 35%;
+    border: none;
+    outline: none;
+    background-color:ivory
+}
+#abt{
+    background-color:black;
+    font-weight:700;
+    text-emphasis-color:inherit;
+}
+.card-body{
+    background-color: lavenderblush;
+    text-decoration-color:mintcream;
+}
+.about{
+    background-color: green;
+
+}
+.about p{
+    font-weight: 500;
+    background-color:ivory;
+}
+.about card-header{
+    font-weight: 600;
+    color:honeydew;
+}
+.mb-4{
+    background-color: lightcoral;
+
+
+}
+.image-resize {
+    height:275px;
+}
+
 .picture{
     background: url(./pic.jpg)no-repeat;
     height: 70vh;
