@@ -61,8 +61,12 @@
        
             const email=document.getElementById('inputEmail').value;
             const password=document.getElementById('inputPassword').value;
-
-            fetch("http://localhost:3005/buyerRegi/"+email)
+     
+             if(email =="" || password==""){
+                alert("Email and Password is must")
+             }   else
+             {
+                fetch("http://localhost:3005/buyerRegi/"+email)
             .then(response => response.json())
             .then(data => {
                 console.log(data)
@@ -79,7 +83,7 @@
                           localStorage.setItem('pinb',data[0].pincode);
                           localStorage.setItem('passwordb',data[0].password);
                           
-                         window.location="/html/product.html";
+                         window.location="/html/Buyer.html";
                       }
                       else{
                           alert("login Failed")
@@ -89,6 +93,9 @@
 
 
              
+
+             }
+      
         }
 
 

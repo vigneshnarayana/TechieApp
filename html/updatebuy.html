@@ -82,13 +82,13 @@
     }
 
     function initial(){
-        var id=localStorage.getItem('id');
-        var firstname=localStorage.getItem('firstname');
-        var lastname=localStorage.getItem('lastname');
-        var mailid=localStorage.getItem('mailid');
-        var phonenumber=localStorage.getItem('phonenumber');
-        var pin=localStorage.getItem('pin');
-        var password=localStorage.getItem('password');
+        var id=localStorage.getItem('idb');
+        var firstname=localStorage.getItem('firstnameb');
+        var lastname=localStorage.getItem('lastnameb');
+        var mailid=localStorage.getItem('mailidb');
+        var phonenumber=localStorage.getItem('phonenumberb');
+        var pin=localStorage.getItem('pinb');
+        var password=localStorage.getItem('passwordb');
       document.getElementById('firstname').defaultValue =firstname;
       document.getElementById('lastname').defaultValue =lastname;
       document.getElementById('mailid').defaultValue =mailid;
@@ -105,13 +105,13 @@
     function logoutaction(){
       window.location="/html/home.html";
 
-      localStorage.removeItem('id');
-      localStorage.removeItem('firstname');
-      localStorage.removeItem('lastname');
-      localStorage.removeItem('mailid');
-      localStorage.removeItem('phonenumber');
-       localStorage.removeItem('pin');
-      localStorage.removeItem('password');
+      localStorage.removeItem('idb');
+      localStorage.removeItem('firstnameb');
+      localStorage.removeItem('lastnameb');
+      localStorage.removeItem('mailidb');
+      localStorage.removeItem('phonenumberb');
+       localStorage.removeItem('pinb');
+      localStorage.removeItem('passwordb');
     }
 
 
@@ -136,11 +136,11 @@
          }
           else{
 
-            var id =localStorage.getItem('id');
+            var id =localStorage.getItem('idb');
 
           
             const Data = {
-            url: 'http://localhost:3005/sellerRegi/'+id,
+            url: 'http://localhost:3005/buyerRegi/'+id,
             data: {
                 '_id':id,
                 'firstname': name,
