@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 .farmcartTechie{
-    height:0%;
-    width: min-content;
+    height: 50px;;
+    width:50px;
 }
 .farmcart{
     font-size: 4rem;
@@ -27,3 +27,8 @@
 }
 .nav-link:hover{
     color:green;
+}
+.image-resize {
+    height:475px;
+    width:min-content;
+}

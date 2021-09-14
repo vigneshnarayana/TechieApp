@@ -1,0 +1,44 @@
+body {
+    background: rgb(89, 19, 50)
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color:chocolate;
+}
+
+.profile-button {
+    background:chocolate;
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background:chocolate;
+}
+
+.profile-button:focus {
+    background:chocolate;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background:chocolate;
+    box-shadow: none
+}
+
+.back:hover {
+    color:chocolate;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+
+.add-experience:hover {
+    background:chocolate;
+    color:chocolate;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
