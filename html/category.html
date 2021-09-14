@@ -149,7 +149,7 @@
               </div>
               <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Product image  url</label>
-            <input type="password" class="form-control" id="imageurl">
+            <input type="text" class="form-control" id="imageurl">
           </div>
           <div class="mb-3">
 
@@ -170,7 +170,7 @@
 
           <div class="mb-3">
             <label for="Quantity" class="form-label">Quantity of the Project</label>
-            <select id="foodqantity" class="form-control DP">
+            <select id="foodqantity" class="form-control">
               <option value="10">10kg</option>
               <option value="20">20Kg</option>
               <option value="30">30Kg</option>
@@ -185,8 +185,8 @@
           </div>
 
         <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label> -->
         </div>
         <div class="mb-3">
         <button type="submit" class="btn btn-primary" onclick="submitdata()">Submit</button>
@@ -247,7 +247,7 @@ function postData(url = '', data = {}) {
                 'productid': ProductId,
                 'productname': localStorage.getItem('productname'),
                 'description':description,
-                'productimageurl': productprice,
+                'productimageurl': imageurl,
                 'productprice': productprice,
                 'quantity':foodqantity
             }

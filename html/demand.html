@@ -25,40 +25,23 @@
     </div>
   </nav>
   <button type="button" onclick="loadPosts()">Search...</button>
-    
-  <div id="hotels"></div>
-  <!-- <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Id</th>
-            <th scope="col">PRODUCT CATEGORY</th>
-            <th scope="col">PRODUCT</th>
-            <th scope="col">QUANTITY</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>fruits</td>
-            <td>Grapes</td>
-            <td>25kg</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>vegetable</td>
-            <td>Carrot</td>
-            <td>10kg</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Nuts</td>
-            <td>Cashewnut</td>
-            <td>7kg</td>
-            
-          </tr>
-        </tbody>
-      </table> -->
-    <!-- Bootstrap JavaScript Libraries -->
+  <table class="table">
+    <tr>
+      <th>Product Category</th>
+      <th>Product Id</th>
+      <th>Product Name</th>
+      <th>Description</th>
+      <th>Product Imageurl</th>
+      <th>Product Price</th>
+      <th>Quantity</th>
+   
+        </tr>
+  </table>
+  <div id="hotels">
+
+
+  </div>
+ 
 
     <script type = "text/javascript">
       function loadPosts() {
@@ -75,33 +58,25 @@
                   .then(data => {
                       console.log(data)
                       var valu=JSON.stringify(data);
-
-                    
-                        //var data= data[0].productid;
-                        let output = '';
-                        
-                      
+                      let output = '';
+                             
+                       data.map(element => 
+                       {
+                         //element.productcategory
+                         
+                 //<p> Hi  : ${localStorage.getItem('firstname')}</p>
+                                     
             output += `
-                 <p> Hi  : ${localStorage.getItem('firstname')}</p>
                 <table class="table">
-                  <tr>
-                    <th>Product Category</th>
-                    <th>Product Id</th>
-                    <th>Product Name</th>
-                    <th>Description</th>
-                    <th>Product Imageurl</th>
-                    <th>Product Price</th>
-                    <th>Quantity</th>
-                 
-                      </tr>
+                  
                    <tr>
-                    <td>${data[0].productcategory}</td>
-                    <td>${data[0].productid}</td>
-                    <td>${data[0].productname}</td>
-                    <td>${data[0].description}</td>
-                    <td>${data[0].productimageurl}</td>
-                    <td>${data[0].productprice}</td>
-                    <td>${data[0].quantity}</td>
+                    <td>${element.productcategory}</td>
+                    <td>${element.productid}</td>
+                    <td>${element.productname}</td>
+                    <td>${element.description}</td>
+                    <td>${element.productimageurl}</td>
+                    <td>${element.productprice}</td>
+                    <td>${element.quantity}</td>
                   
                       </tr>
                     </table>
@@ -110,10 +85,18 @@
                
             `;
             
-            console.log(data[0].productid);
+
+                       }
+                       
+                       );
+
+                        //var data= data[0].productid;
+                   
+          
+          //  console.log(data[0].productid);
      
         document.getElementById('hotels').innerHTML = output;
-        // window.location.href = "http://www.w3schools.com";
+       
     })
     .catch((err) => {
         console.log(err);
@@ -124,53 +107,7 @@
                  
 
 
-          /////////////////////////
 
-
-    // fetch('http://localhost:3005/addproduct/'+localStorage.getItem('id'))
-    // .then((res) => res.json()).then(rest => {
-    //     let output = '';
-    //     rest.map(h => {
-    //         //console.log(h);
-    //           //         <p>${h.restAddress}</p>
-    //     //         <p>${h.restType}</p>
-    //     // <h1>${h. restName}</h1>
-        
-    //         output += `
-    //             <table class="table">
-    //               <tr>
-    //                 <th>country</th>
-    //                 <th>city</th>
-    //                 <th>managerName</th>
-    //                 <th>phoneno</th>
-    //                 <th>email</th>
-    //                 <th>website</th>
-    //                 <th>facility</th>
-    //                 <th>zipcode</th>
-    //                   </tr>
-    //                <tr>
-    //                 <td>${h[0].productid}</td>
-    //                 <td>${h[0].productid}</td>
-    //                 <td>${h[0].productid}</td>
-    //                 <td>${h[0].productid}</td>
-    //                 <td>${h[0].productid}</td>
-    //                 <td>${h[0].productid}</td>
-    //                 <td>${h[0].productid}</td>
-    //                 <td>${h[0].productid}</td>
-    //                   </tr>
-    //                 </table>
-
-
-               
-    //         `;
-    //         console.log(h[0].productid);
-    //     });
-    //     document.getElementById('hotels').innerHTML = output;
-    //     // window.location.href = "http://www.w3schools.com";
-    // })
-    // .catch((err) => {
-    //     console.log(err);
-    // });
 }
 </script>
 
