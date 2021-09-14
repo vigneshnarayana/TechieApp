@@ -14,25 +14,28 @@
     appearance: none;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    width: auto;
 }
 .mb-3 {
     margin-bottom: 1rem!important;
     margin-left: 500px;
+    width: auto;
 }
 textarea.form-control {
     min-height: calc(1.5em + (.75rem + 2px));
-    width: 393px;
+    width: auto;
 }
 .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
     display: flex;
     flex-wrap: inherit;
     align-items: center;
-    justify-content: space-between;
-    background-color: #39ec3b;
+    justify-content: space-between;    
+    background-color: rgb(13 110 253 / 25%);
+    background-size: cover;
 
 }
 .bg-light {
-    background-color: yellow;
+    background-color: rgb(255, 0, 34);
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     margin-top: -30px;
@@ -40,6 +43,7 @@ textarea.form-control {
     font-weight: 500;
     line-height: 1.2;
     margin-left: 151px;
+    width: auto;
 }
 h2 {
     display: block;
@@ -50,7 +54,8 @@ h2 {
     margin-inline-end: 0px;
     font-weight: bold;
     margin-top: -11px;
-    color: chartreuse;
+    color: rgb(68, 0, 255);
+    width: auto;
     
    
 }
@@ -59,6 +64,30 @@ h2 {
     width: 145px;
     height: 41px;
     margin-bottom: -12px;
+    width: auto;
 }
-
+body{
+    background-image: url('/static/farm.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: auto;
+}
+label {
+    display: inline-block;
+    font-weight: bold;
+    color: rgb(232, 232, 240);
+    width: auto;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: aliceblue;
+}
+.form-text {
+    margin-top: .25rem;
+    font-size: .875em;
+    color: rgb(0, 255, 13);
+    font-weight: bold;
+}
 
