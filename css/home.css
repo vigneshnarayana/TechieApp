@@ -7,14 +7,12 @@
     font-size: 4rem;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: green;
-    
-
 }
 #navbar{
     top: 0;
     left: 0;
     z-index: 100;
-
+    background-color: #008000;
 }
 .farmcart:hover{
     color: rgb(0, 0, 0);
@@ -22,6 +20,8 @@
 .card-m{
     color: indigo;
     font-style: oblique;
+
+ 
 
 }
 .ab{
@@ -57,14 +57,13 @@
 .nav-link{
     margin-right: 10px;
     margin-left: 10px;
-    color: black;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-style: oblique;
-    text-transform: uppercase;
-    background-color:honeydew;
+    color: white;
+    font-family:"Times New Roman", Times, serif;
+    font-size: 20px;
+    
 }
 .nav-link:hover{
-    color:green;
+    color:white;
 }
 .search{
     height: 40px;
@@ -89,9 +88,9 @@
     text-transform:inherit;
 }
 .dropdown-item{
-    font-size: 2rem;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color:green;
+    font-family:"Times New Roman", Times, serif;
+    font-size: 25px;
+    color:black;
 }
 .main h1{
     font-size: 4em;
@@ -105,7 +104,7 @@
     background-color:ivory
 }
 #abt{
-    background-color:black;
+    background-color:green;
     font-weight:700;
     text-emphasis-color:inherit;
 }
@@ -115,6 +114,8 @@
 }
 .about{
     background-color: green;
+
+ 
 
 }
 .about p{
@@ -126,13 +127,17 @@
     color:honeydew;
 }
 .mb-4{
-    background-color: lightcoral;
+    background-color: #008000;
+
+ 
 
 
 }
 .image-resize {
     height:275px;
 }
+
+ 
 
 .picture{
     background: url(./pic.jpg)no-repeat;

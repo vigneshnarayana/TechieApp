@@ -28,7 +28,7 @@ section .imgBx:before
      left: 0;
      width: 100%;
      height: 100%;
-     background: linear-gradient(225deg,#e91e63,#03a9f4);
+     background: linear-gradient(225deg,#34d141,#03a9f4);
      z-index:1;
      mix-blend-mode:screen;
 }
@@ -60,7 +60,7 @@ font-weight: 600;
 font-size: 1.5em;
 text-transform: uppercase;
 margin-bottom: 20px;
-border-bottom: 4px solid #ff4584;
+border-bottom: 4px solid #34d141;
 display: inline-block;
 letter-spacing: 1px;
 }
@@ -98,7 +98,7 @@ section .contentBx .formBx .inputBx input
  
 section .contentBx .formBx .inputBx input[type="submit"]
 {
-    background: #ff4584;
+    background: #34d141;
     color: #fff;
     outline:none;
     border: none;
@@ -108,7 +108,7 @@ section .contentBx .formBx .inputBx input[type="submit"]
  
 section .contentBx .formBx .inputBx input[type="submit"]:hover
 {
-    background: #f53677;
+    background:#34d141;
 }
  
 section .contentBx .formBx .inputBx p
@@ -118,7 +118,7 @@ section .contentBx .formBx .inputBx p
  
 section .contentBx .formBx .inputBx p a
 {
-    color: #ff4584;
+    color: #34d141;
 }
  
 section .contentBx .formBx h3
@@ -152,7 +152,7 @@ section .contentBx .formBx .sci li
  
 section .contentBx .formBx .sci li:hover
 {
-    background: #ff4584;
+    background: #34d141;
 }
  
 section .contentBx .formBx .sci li img
