@@ -242,13 +242,14 @@ function postData(url = '', data = {}) {
        const Data = {
             url: 'http://localhost:3005/addproduct',
             data: {
-                'sellerId': name,
+                'sellerId': localStorage.getItem('id'),
                 'productcategory':productcategory,
                 'productid': ProductId,
                 'productname': localStorage.getItem('productname'),
                 'description':description,
                 'productimageurl': productprice,
-                'productprice': productprice
+                'productprice': productprice,
+                'quantity':foodqantity
             }
         };
 
