@@ -2,29 +2,30 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-.farmcartTechie{
+    }
+    .farmcartTechie{
     height:auto;
-   max-width: 100%;
+    max-width: 100%;
     width: min-content;
-}
-.farmcart{
+    }
+    .farmcart{
     font-size: 4rem;
     font-family: 'Lobster', cursive;
     color:green;
-}
-.farmcart:hover{
+    }
+    .farmcart:hover{
     color: rgb(0, 0, 0);
-}
-.nav-item{
+    }
+    .nav-item{
     padding-right: 40px;
     margin-right: 10px;
     margin-left: 10px;
     color: black;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman',
     font-style: oblique;
     text-transform: uppercase;
-    background-color:lavender;
-}
-.nav-link:hover{
+    
+    }
+    .nav-link:hover{
     color:green;
+    }
