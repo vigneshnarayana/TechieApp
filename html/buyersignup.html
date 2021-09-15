@@ -1,233 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/buyersignup.css">
-    <title>Ecommerce for Agricultural Product!!!</title>
+
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<!-- Bootstrap CSS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/buyersignup.css">
+<title>Ecommerce for Agricultural Product!!!</title>
+
+
 
 </head>
 
+
+
 <body background="restaurante-varanda-de-lisboa--v15969937-w902 (1).jpg">
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
-    <div class="container">
-        <a href="#" class="navbar-brand mr-3">
-            <h2>TECHIE</h2>
-        </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarCollapse">
-            <div class="navbar-nav col-sm-10">
-                <a href="#" class="nav-item nav-link " onclick="location.href='homefinal.html';">Home</a>
-                <a href="#" class="nav-item nav-link "></a>
-                <a href="#" class="nav-item nav-link"></a>
-                <a href="#" class="nav-item nav-link"></a>
-            </div>
-            <div class="navbar-nav ml-auto col-sm-2">
-
-                <a href="#" class="nav-item nav-link active">Sign up</a>
-                <a href="#" class="nav-item nav-link " onclick="location.href='/html/buyerlogin.html';">Log in</a>
-
-            </div>
-        </div>
+    <nav class="navbar navbar-dark bg-success">
+    <div>
+    <a href="/html/homefinal.html" class="navbar-brand mr-3"><img src="/static/logo.png" width="50%"></a>
     </div>
-</nav>
+    <div class="texthyper" >
+    <a href="#" class="nav-item nav-link " ></a>
+    </div>
+    <div class="texthyper">
+    <a href="#" class="nav-item nav-link " ></a>
+    </div>
+    <div class="texthyper">
+    <a href="/html/buyerlogin.html" class="nav-item nav-link active" style="color:white;">Log in</a>
+    </div>
+    </nav>
 <div class="container">
-    <section>
-        <div class="container-fluid contentBx">
-        <div class="formBx">
-        <form>
-        <div class="inputBx">
-        <span>First Name</span>
-        <input type="text" class="form-control" id="inputName" onkeyup="checkregname()" placeholder="Name">
-        <p class="text-danger" id="alertregname" ></p>
-        </div>
-        <div class="inputBx">
-        <span>Last Name</span>
-        <input type="text" class="form-control" id="inputlastname" placeholder="Last Name">
-        </div>
-        <div class="inputBx">
-        <span>Phone</span>
-        <input type="text" class="form-control" id="inputPhone" placeholder="Phone number" onkeyup="checkregphone()">
-        <p class="text-danger" id="alertregphone" ></p>
-        </div>
-        <div class="inputBx">
-        <span>Pincode</span>
-        <input type="text" class="form-control" id="inputNumber" placeholder="Pin Code">
-        </div>
-        <div class="inputBx">
-        <span>Email</span>
-        <input type="email" class="form-control" id="inputEmail" placeholder="Email" onkeyup="checkregmail()">
-        <p class="text-danger" id="alertregmail" ></p>
-        </div>
-        <div class="inputBx">
-        <span>Password</span>
-        <input type="password" onkeyup="checkregpass()" class="form-control" onkeyup="checkregpass()" id="inputPassword"placeholder="Password">
-        <p class="text-danger" id="alertregpass" ></p>
-        </div>
-        <div class="inputBx">
-        <input type="submit" value="Sign Up" name="" id="sign" class="btn btn-primary" onclick="handleClick()">
-        </div>
-        </form>
-        </div>
-        </div>
-        </section>
+<section>
+<div class="container-fluid contentBx">
+<div class="formBx">
+<form>
+<div class="inputBx">
+<span>First Name</span>
+<input type="text" class="form-control" id="inputName" onkeyup="checkregname()" placeholder="Name">
+<p class="text-danger" id="alertregname" ></p>
+</div>
+<div class="inputBx">
+<span>Last Name</span>
+<input type="text" class="form-control" id="inputlastname" placeholder="Last Name">
+</div>
+<div class="inputBx">
+<span>Phone</span>
+<input type="text" class="form-control" id="inputPhone" placeholder="Phone number" onkeyup="checkregphone()">
+<p class="text-danger" id="alertregphone" ></p>
+</div>
+<div class="inputBx">
+<span>Pincode</span>
+<input type="text" class="form-control" id="inputNumber" placeholder="Pin Code">
+</div>
+<div class="inputBx">
+<span>Email</span>
+<input type="email" class="form-control" id="inputEmail" placeholder="Email" onkeyup="checkregmail()">
+<p class="text-danger" id="alertregmail" ></p>
+</div>
+<div class="inputBx">
+<span>Password</span>
+<input type="password" onkeyup="checkregpass()" class="form-control" onkeyup="checkregpass()" id="inputPassword"placeholder="Password">
+<p class="text-danger" id="alertregpass" ></p>
+</div>
+<div class="inputBx">
+<input type="submit" value="Sign Up" name="" id="sign" class="btn btn-primary" onclick="handleClick()">
+</div>
+</form>
+</div>
+</div>
+</section>
 </div>
 
 
+
+
 <script type="text/javascript">
-    function postData(url = '', data = {}) {
-        console.log('We are here');
-        // Default options are marked with *
-        return fetch(url, {
-            method: 'POST', // *GET, POST, PUT, DELETE, etc.
-            mode: 'cors', // no-cors, cors, *same-origin
-            cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-            credentials: 'same-origin', // include, *same-origin, omit
-            headers: {
-                'Content-Type': 'application/json',
-                // 'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            redirect: 'follow', // manual, *follow, error
-            referrer: 'no-referrer', // no-referrer, *client
-            body: JSON.stringify(data), // body data type must match "Content-Type" header
-        })
-            .then(response => response.json()); // parses JSON response into native Javascript objects
-    }
-
-    function handleClick() {
-        debugger;
-        console.log('Hi');
-        const name = document.getElementById('inputName').value;
-       
-        const email = document.getElementById('inputEmail').value;
-        const phone = document.getElementById('inputPhone').value;
-        const lastname = document.getElementById('inputlastname').value;
-        const pin = document.getElementById('inputNumber').value;
-        const password = document.getElementById('inputPassword').value;
-        
-        if(name==""){
-         document.getElementById('alertregname').innerHTML=`Enter User Name`;
-        document.getElementById('sign').disabled = true;
-        }
-        else if(email==""){
-            document.getElementById('inputEmail').innerHTML=`Enter Email Id`;
-        document.getElementById('sign').disabled = true;
-        }else if(password==""){
-        document.getElementById('password').innerHTML=`Enter Phone Number`;
-        document.getElementById('sign').disabled = true;
-        }else{
-
-            const Data = {
-            url: 'http://localhost:3005/buyerRegi',
-            data: {
-                'firstname': name,
-                'lastname':lastname,
-                'email': email,
-                'phonenumber': phone,
-                'pincode':pin,
-                'password': password
-            }
-        };
-
-
-        postData(Data.url, Data.data)
-       .then(data => console.log(JSON.stringify(data)))
-       .then(data =>{
-        alert("Successfully created account");
-        window.location="/html/buyerlogin.html";
-       })
-         .catch(error => console.error(error));
-        }
-  
-    
-       
-    }
-
-    function checkregmail(){
-        console.log("entered into check mail");
-        var decimal=  /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-        const element=document.getElementById('inputEmail');
-        const email=element.value;
-        if(email.match(decimal)){
-            console.log("match");
-            document.getElementById('alertregmail').innerHTML=``;
-            document.getElementById('sign').disabled = false;
-        }
-        else{
-            console.log("notmatch");
-            document.getElementById('alertregmail').innerHTML=`enter valid email`;
-            document.getElementById('sign').disabled = true;
-        }
-    }
-    function checkregname(){
-    console.log("entered into check name");
-    var decimal=  /^[a-zA-Z0-9_-]{5,15}$/;
-    const element=document.getElementById('inputName');
-    const email=element.value;
-    if(email.match(decimal)){
-        console.log("match");
-        document.getElementById('alertregname').innerHTML=``;
-        document.getElementById('sign').disabled = false;
-    }
-    else{
-        console.log("notmatch");
-        document.getElementById('alertregname').innerHTML=`Username must be have atleast 5 letters`;
-        document.getElementById('sign').disabled = true;
-    }
+function postData(url = '', data = {}) {
+console.log('We are here');
+// Default options are marked with *
+return fetch(url, {
+method: 'POST', // *GET, POST, PUT, DELETE, etc.
+mode: 'cors', // no-cors, cors, *same-origin
+cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+credentials: 'same-origin', // include, *same-origin, omit
+headers: {
+'Content-Type': 'application/json',
+// 'Content-Type': 'application/x-www-form-urlencoded',
+},
+redirect: 'follow', // manual, *follow, error
+referrer: 'no-referrer', // no-referrer, *client
+body: JSON.stringify(data), // body data type must match "Content-Type" header
+})
+.then(response => response.json()); // parses JSON response into native Javascript objects
 }
+
+
+
+function handleClick() {
+debugger;
+console.log('Hi');
+const name = document.getElementById('inputName').value;
+
+const email = document.getElementById('inputEmail').value;
+const phone = document.getElementById('inputPhone').value;
+const lastname = document.getElementById('inputlastname').value;
+const pin = document.getElementById('inputNumber').value;
+const password = document.getElementById('inputPassword').value;
+
+if(name==""){
+document.getElementById('alertregname').innerHTML=`Enter User Name`;
+document.getElementById('sign').disabled = true;
+}
+else if(email==""){
+document.getElementById('inputEmail').innerHTML=`Enter Email Id`;
+document.getElementById('sign').disabled = true;
+}else if(password==""){
+document.getElementById('password').innerHTML=`Enter Phone Number`;
+document.getElementById('sign').disabled = true;
+}else{
+
+
+
+const Data = {
+url: 'http://localhost:3005/buyerRegi',
+data: {
+'firstname': name,
+'lastname':lastname,
+'email': email,
+'phonenumber': phone,
+'pincode':pin,
+'password': password
+}
+};
+
+
+
+
+postData(Data.url, Data.data)
+.then(data => console.log(JSON.stringify(data)))
+.then(data =>{
+alert("Successfully created account");
+window.location="/html/buyerlogin.html";
+})
+.catch(error => console.error(error));
+}
+
+
+
+}
+
+
+
+function checkregmail(){
+console.log("entered into check mail");
+var decimal= /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+const element=document.getElementById('inputEmail');
+const email=element.value;
+if(email.match(decimal)){
+console.log("match");
+document.getElementById('alertregmail').innerHTML=``;
+document.getElementById('sign').disabled = false;
+}
+else{
+console.log("notmatch");
+document.getElementById('alertregmail').innerHTML=`enter valid email`;
+document.getElementById('sign').disabled = true;
+}
+}
+function checkregname(){
+console.log("entered into check name");
+var decimal= /^[a-zA-Z0-9_-]{5,15}$/;
+const element=document.getElementById('inputName');
+const email=element.value;
+if(email.match(decimal)){
+console.log("match");
+document.getElementById('alertregname').innerHTML=``;
+document.getElementById('sign').disabled = false;
+}
+else{
+console.log("notmatch");
+document.getElementById('alertregname').innerHTML=`Username must be have atleast 5 letters`;
+document.getElementById('sign').disabled = true;
+}
+}
+
+
 
 function checkregphone(){
-    console.log("entered into check name");
-    var decimal=  /^[2-9]{1}[0-9]{9}$/;
-    const element=document.getElementById('inputPhone');
-    const email=element.value;
-    if(email.match(decimal)){
-        console.log("match");
-        document.getElementById('alertregphone').innerHTML=``;
-        document.getElementById('sign').disabled = false;
-    }
-    else{
-        console.log("notmatch");
-        document.getElementById('alertregphone').innerHTML=`10 digit mobile number need to be entered`;
-        document.getElementById('sign').disabled = true;
-    }
+console.log("entered into check name");
+var decimal= /^[2-9]{1}[0-9]{9}$/;
+const element=document.getElementById('inputPhone');
+const email=element.value;
+if(email.match(decimal)){
+console.log("match");
+document.getElementById('alertregphone').innerHTML=``;
+document.getElementById('sign').disabled = false;
+}
+else{
+console.log("notmatch");
+document.getElementById('alertregphone').innerHTML=`10 digit mobile number need to be entered`;
+document.getElementById('sign').disabled = true;
+}
 }
 
+
+
 function checkregpass(){
-    console.log("entered into check name");
-    var decimal=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
-    const element=document.getElementById('inputPassword');
-    const email=element.value;
-    if(email.match(decimal)){
-        console.log("match");
-        document.getElementById('alertregpass').innerHTML=``;
-        document.getElementById('sign').disabled = false;
-    }
-    else{
-        console.log("notmatch");
-        document.getElementById('alertregpass').innerHTML=`Password must have one uppercase, one number and one special character`;
-        document.getElementById('sign').disabled = true;
-    }
+console.log("entered into check name");
+var decimal= /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+const element=document.getElementById('inputPassword');
+const email=element.value;
+if(email.match(decimal)){
+console.log("match");
+document.getElementById('alertregpass').innerHTML=``;
+document.getElementById('sign').disabled = false;
 }
+else{
+console.log("notmatch");
+document.getElementById('alertregpass').innerHTML=`Password must have one uppercase, one number and one special character`;
+document.getElementById('sign').disabled = true;
+}
+}
+
+
 
 
 </script>
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
 
 
+
+
 </body>
+
+
 
 </html>
