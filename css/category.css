@@ -35,7 +35,7 @@ textarea.form-control {
 
 }
 .bg-light {
-    background-color: rgb(255, 0, 34);
+    background-color: rgb(17, 68, 2);
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     margin-top: -30px;
@@ -54,7 +54,7 @@ h2 {
     margin-inline-end: 0px;
     font-weight: bold;
     margin-top: -11px;
-    color: rgb(68, 0, 255);
+    color: rgb(7, 7, 7);
     width: auto;
     
    
@@ -67,7 +67,7 @@ h2 {
     width: auto;
 }
 body{
-    background-image: url('/static/farm.jpg');
+    background-image: url('https://blog.ipleaders.in/wp-content/uploads/2020/08/Swatantra-1.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     width: auto;
@@ -75,14 +75,14 @@ body{
 label {
     display: inline-block;
     font-weight: bold;
-    color: rgb(232, 232, 240);
+    color: rgb(14, 14, 15);
     width: auto;
 }
 p {
     margin-top: 0;
     margin-bottom: 1rem;
     font-weight: bold;
-    color: aliceblue;
+    color: rgb(6, 7, 7);
 }
 .form-text {
     margin-top: .25rem;

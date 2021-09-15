@@ -17,9 +17,11 @@
 </head>
 <body background="Toronto-restaurant-Sara-entertainment-district-OD_KCHN0554-HERO-SHOT.jpg"  >
     <nav class="navbar navbar-dark bg-success">
-        <div>
-        <a href="/html/homefinal.html" class="navbar-brand mr-3"><img src="/static/logo.png" width="50%"></a>
-        </div>
+        <div class="container">
+        <a href="/html/homefinal.html" class="navbar-brand mr-3"><img src="/static/logo.png" width="45%"></a>
+        <a class="navbar-brand" href="#" style="text-align: center;"><h1 style="color:white;">Seller Log in</h1></a>
+   
+    </div>
         <div class="texthyper" >
         <a href="#" class="nav-item nav-link " ></a>
         </div>
@@ -71,7 +73,7 @@
                             alert("Email and Password is must")
                     }else{
 
-                        fetch("http://localhost:3005/sellerRegi/"+email)
+                     fetch("http://localhost:3005/sellerRegi/"+email)
                     .then(response => response.json())
                     .then(data => {
                         console.log(data)

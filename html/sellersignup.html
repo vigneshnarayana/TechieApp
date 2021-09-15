@@ -26,9 +26,11 @@
 
 <body background="restaurante-varanda-de-lisboa--v15969937-w902 (1).jpg">
     <nav class="navbar navbar-dark bg-success">
-    <div>
+    <div class="container">
     <a href="/html/homefinal.html" class="navbar-brand mr-3"><img src="/static/logo.png" width="50%"></a>
+    <a class="navbar-brand"  style="text-align: center;"href="#"><h1 style="color:white;">Seller Signup</h1></a>
     </div>
+    
     <div class="texthyper" >
     <a href="#" class="nav-item nav-link " ></a>
     </div>
@@ -132,7 +134,7 @@ document.getElementById('sign').disabled = true;
 
 
 const Data = {
-url: 'http://localhost:3005/buyerRegi',
+url: 'http://localhost:3005/sellerRegi',
 data: {
 'firstname': name,
 'lastname':lastname,
@@ -150,7 +152,7 @@ postData(Data.url, Data.data)
 .then(data => console.log(JSON.stringify(data)))
 .then(data =>{
 alert("Successfully created account");
-window.location="/html/buyerlogin.html";
+window.location="/html/sellerlogin.html";
 })
 .catch(error => console.error(error));
 }
