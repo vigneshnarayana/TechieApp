@@ -22,7 +22,6 @@
     </div>
  
   </nav>
-  
 
    
   <div class="container col-2">
@@ -37,11 +36,11 @@
       <th>Product Category</th>
       <th>Product Id</th>
       <th>Product Name</th>
-      <th>Description</th>
+  
       <th>Product Imageurl</th>
       <th>Product Price</th>
       <th>Quantity</th>
-   
+  
         </tr>
   </table>
   <div id="hotels">
@@ -77,13 +76,15 @@
                 <table class="table">
                   
                    <tr>
-                    <td>${element.productcategory}</td>
-                    <td>${element.productid}</td>
-                    <td>${element.productname}</td>
-                    <td>${element.description}</td>
-                    <td>${element.productimageurl}</td>
-                    <td>${element.productprice}</td>
-                    <td>${element.quantity}</td>
+                    <td>  ${element.productcategory}</td>
+                    <td> <strong >${element.productid}</strong></td>
+                    <td> <strong>${element.productname}</strong></td>
+                   
+                    <td>
+                      <img src="${element.productimageurl}" class="card-img img-fluid" alt=""style="width: 60px;height: 60px;" >
+                    </td>
+                    <td>Per kg-Rs  <strong>${element.productprice}</strong> </td>
+                    <td>${element.quantity} Kg</td>
                   
                       </tr>
                     </table>

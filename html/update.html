@@ -88,13 +88,13 @@
         var mailid=localStorage.getItem('mailid');
         var phonenumber=localStorage.getItem('phonenumber');
         var pin=localStorage.getItem('pin');
-        var password=localStorage.getItem('password');
+      //  var password=localStorage.getItem('password');
       document.getElementById('firstname').defaultValue =firstname;
       document.getElementById('lastname').defaultValue =lastname;
       document.getElementById('mailid').defaultValue =mailid;
       document.getElementById('phonenumber').defaultValue =phonenumber;
       document.getElementById('pin').defaultValue = pin;
-      document.getElementById('password').defaultValue = password;
+     // document.getElementById('password').defaultValue = password;
       document.getElementById('mailidps').innerHTML=mailid;
 
 
@@ -133,6 +133,11 @@
 
         if(mailid==""){
              alert("Please update");
+         }else if(localStorage.getItem('password') !=password){
+                 alert("Your Old Password is Wrong")
+         }
+         else if( newpassword !=password){
+            alert("Password Not Mach,Please Check");
          }
           else{
 

@@ -1,90 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
+
+
 <head>
-<title>Title</title>
 <!-- Required meta tags -->
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<script
-src="https://code.jquery.com/jquery-3.6.0.js"
-integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-crossorigin="anonymous"></script>
-<!-- Bootstrap CSS v5.0.2 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link rel="stylesheet" href="/css/buyersignup.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<!-- Bootstrap CSS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/sellersignup.css">
+<title>Ecommerce for Agricultural Product!!!</title>
+
+
+
 </head>
-<body onload="initial()">
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-<nav class="navbar navbar-expand-md mb-3" style="background: rgb(21, 175, 47);">
+
+
+
+<body background="restaurante-varanda-de-lisboa--v15969937-w902 (1).jpg">
+    <nav class="navbar navbar-dark bg-success">
+    <div>
+    <a href="/html/homefinal.html" class="navbar-brand mr-3"><img src="/static/logo.png" width="50%"></a>
+    </div>
+    <div class="texthyper" >
+    <a href="#" class="nav-item nav-link " ></a>
+    </div>
+    <div class="texthyper">
+    <a href="#" class="nav-item nav-link " ></a>
+    </div>
+    <div class="texthyper">
+    <a href="/html/sellerlogin.html" class="nav-item nav-link active" style="color:white;">Log in</a>
+    </div>
+    </nav>
 <div class="container">
-<div>
-<a href="/html/homefinal.html" class="navbar-brand mr-3"><img src="/static/logo.png" width="50%"></a>
+<section>
+<div class="container-fluid contentBx">
+<div class="formBx">
+<form>
+<div class="inputBx">
+<span>First Name</span>
+<input type="text" class="form-control" id="inputName" onkeyup="checkregname()" placeholder="Name">
+<p class="text-danger" id="alertregname" ></p>
 </div>
-<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse " id="navbarCollapse">
-<div class="navbar-nav col-sm-10">
-<a href="#" class="nav-item nav-link"></a>
-<a href="#" class="nav-item nav-link"></a>
-<a href="#" class="nav-item nav-link"></a>
-<a href="#" class="nav-item nav-link"></a>
+<div class="inputBx">
+<span>Last Name</span>
+<input type="text" class="form-control" id="inputlastname" placeholder="Last Name">
 </div>
-<div class="navbar-nav ml-auto col-sm-2">
+<div class="inputBx">
+<span>Phone</span>
+<input type="text" class="form-control" id="inputPhone" placeholder="Phone number" onkeyup="checkregphone()">
+<p class="text-danger" id="alertregphone" ></p>
+</div>
+<div class="inputBx">
+<span>Pincode</span>
+<input type="text" class="form-control" id="inputNumber" placeholder="Pin Code">
+</div>
+<div class="inputBx">
+<span>Email</span>
+<input type="email" class="form-control" id="inputEmail" placeholder="Email" onkeyup="checkregmail()">
+<p class="text-danger" id="alertregmail" ></p>
+</div>
+<div class="inputBx">
+<span>Password</span>
+<input type="password" onkeyup="checkregpass()" class="form-control" onkeyup="checkregpass()" id="inputPassword"placeholder="Password">
+<p class="text-danger" id="alertregpass" ></p>
+</div>
+<div class="inputBx">
+<input type="submit" value="Sign Up" name="" id="sign" class="btn btn-primary" onclick="handleClick()">
+</div>
+</form>
+</div>
+</div>
+</section>
+</div>
 
- <a href="#" class="nav-item nav-link " onclick="location.href='/html/sellerlogin.html';" style="color: white;">Log in</a>
 
- </div>
-</div>
-</div>
-</nav>
-<div class="container rounded bg-white mt-5 mb-5">
-<div class="row">
-<div class="col-md-3 border-right">
-<div class="d-flex flex-column align-items-center text-center p-3 py-5"></div>
-</div>
-<div class="col-md-5 border-right">
-<div class="p-3 py-5">
-<div class="d-flex justify-content-between align-items-center mb-3">
-<h4 class="text-right">Sign Up</h4>
-</div>
-<div class="row mt-2">
-<div class="col-md-6"><label class="labels">First Name</label><input type="text" class="form-control" placeholder="first name" id="firstname"></div>
-<div class="col-md-6"><label class="labels">Last Name</label><input type="text" class="form-control" placeholder="surname" id="lastname"></div>
-</div>
-<div class="row mt-3">
-<div class="col-md-12"><label class="labels">Mobile Number</label><input type="text" class="form-control" placeholder="enter phone number" id="phonenumber"></div>
-<div class="col-md-12"><label class="labels">Address Line 1</label><input type="text" class="form-control" placeholder="enter address line 1" value="" id="address"></div>
-<!-- <div class="col-md-12"><label class="labels">Address Line 2</label><input type="text" class="form-control" placeholder="enter address line 2" value=""></div> -->
-<div class="col-md-12"><label class="labels">Pincode</label><input type="text" class="form-control" placeholder="enter Pincode" id="pin"></div>
-<!-- <div class="col-md-12"><label class="labels">Area</label><input type="text" class="form-control" placeholder="enter Area " value=""></div> -->
-<!-- <div class="col-md-12"><label class="labels">State</label><input type="text" class="form-control" placeholder="enter State" value=""></div> -->
-<div class="col-md-12"><label class="labels">Email ID</label><input type="email" class="form-control" placeholder="enter email id" id="mailid"></div>
-<div class="col-md-12"><label class="labels">Password</label><input type="password" class="form-control" placeholder="password" id="password"></div>
-<div class="col-md-12"><label class="labels">Confirm Password</label><input type="text" class="form-control" placeholder="password" id="confirmpassword"></div>
-</div>
-<div class="row mt-3">
-<div class="col-md-6"><label class="labels">Country</label><input type="text" class="form-control" placeholder="country" value="India"></div>
-<div class="col-md-6"><label class="labels">State/Region</label><input type="text" class="form-control" value="" placeholder="state" id="state"></div>
-</div>
-<div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button" onclick="updatesellerDetails()">Create Account</button></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Bootstrap JavaScript Libraries -->
 
- <script>
-function putData(url = '', data = {}) {
+
+<script type="text/javascript">
+function postData(url = '', data = {}) {
 console.log('We are here');
-debugger;
 // Default options are marked with *
 return fetch(url, {
-method: 'PUT', // *GET, POST, PUT, DELETE, etc.
+method: 'POST', // *GET, POST, PUT, DELETE, etc.
 mode: 'cors', // no-cors, cors, *same-origin
 cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
 credentials: 'same-origin', // include, *same-origin, omit
@@ -99,88 +104,150 @@ body: JSON.stringify(data), // body data type must match "Content-Type" header
 .then(response => response.json()); // parses JSON response into native Javascript objects
 }
 
- function initial(){
-var id=localStorage.getItem('id');
-var firstname=localStorage.getItem('firstname');
-var lastname=localStorage.getItem('lastname');
-var mailid=localStorage.getItem('mailid');
-var phonenumber=localStorage.getItem('phonenumber');
-var pin=localStorage.getItem('pin');
-var password=localStorage.getItem('password');
-document.getElementById('firstname').defaultValue =firstname;
-document.getElementById('lastname').defaultValue =lastname;
-document.getElementById('mailid').defaultValue =mailid;
-document.getElementById('phonenumber').defaultValue =phonenumber;
-document.getElementById('pin').defaultValue = pin;
-document.getElementById('password').defaultValue = password;
-document.getElementById('mailidps').innerHTML=mailid;
 
 
- }
-
- function logoutaction(){
-window.location="/html/home.html";
-
- localStorage.removeItem('id');
-localStorage.removeItem('firstname');
-localStorage.removeItem('lastname');
-localStorage.removeItem('mailid');
-localStorage.removeItem('phonenumber');
-localStorage.removeItem('pin');
-localStorage.removeItem('password');
-}
-
-function updatesellerDetails() {
-console.log('Hi');
-alert("update");
+function handleClick() {
 debugger;
-const firstname = document.getElementById('firstname').value;
-const lastname = document.getElementById('lastname').value;
-const phonenumber = document.getElementById('phonenumber').value;
-const address = document.getElementById('address').value;
-const pin = document.getElementById('pin').value;
-const mailid = document.getElementById('mailid').value;
-const confirmpassword = document.getElementById('confirmpassword').value;
-const password = document.getElementById('password').value;
+console.log('Hi');
+const name = document.getElementById('inputName').value;
 
- const state = document.getElementById('state').value;
+const email = document.getElementById('inputEmail').value;
+const phone = document.getElementById('inputPhone').value;
+const lastname = document.getElementById('inputlastname').value;
+const pin = document.getElementById('inputNumber').value;
+const password = document.getElementById('inputPassword').value;
 
- if(mailid==""){
-alert("Please update");
+if(name==""){
+document.getElementById('alertregname').innerHTML=`Enter User Name`;
+document.getElementById('sign').disabled = true;
 }
-else{
+else if(email==""){
+document.getElementById('inputEmail').innerHTML=`Enter Email Id`;
+document.getElementById('sign').disabled = true;
+}else if(password==""){
+document.getElementById('password').innerHTML=`Enter Phone Number`;
+document.getElementById('sign').disabled = true;
+}else{
 
- var id =localStorage.getItem('id');
+
 
 const Data = {
-url: 'http://localhost:3005/sellerRegi/'+id,
+url: 'http://localhost:3005/buyerRegi',
 data: {
-'_id':id,
 'firstname': name,
 'lastname':lastname,
-'email': mailid,
-'phonenumber': phonenumber,
+'email': email,
+'phonenumber': phone,
 'pincode':pin,
-'password': password,
-"address":address,
-"state":state
+'password': password
 }
 };
 
 
-putData(Data.url, Data.data)
+
+
+postData(Data.url, Data.data)
 .then(data => console.log(JSON.stringify(data)))
 .then(data =>{
-alert("Account Created Sucessfully");
-window.location="/html/productview.html";
+alert("Successfully created account");
+window.location="/html/buyerlogin.html";
 })
-.catch(error => console.log(error));
+.catch(error => console.error(error));
 }
 
+
+
 }
+
+
+
+function checkregmail(){
+console.log("entered into check mail");
+var decimal= /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+const element=document.getElementById('inputEmail');
+const email=element.value;
+if(email.match(decimal)){
+console.log("match");
+document.getElementById('alertregmail').innerHTML=``;
+document.getElementById('sign').disabled = false;
+}
+else{
+console.log("notmatch");
+document.getElementById('alertregmail').innerHTML=`enter valid email`;
+document.getElementById('sign').disabled = true;
+}
+}
+function checkregname(){
+console.log("entered into check name");
+var decimal= /^[a-zA-Z0-9_-]{5,15}$/;
+const element=document.getElementById('inputName');
+const email=element.value;
+if(email.match(decimal)){
+console.log("match");
+document.getElementById('alertregname').innerHTML=``;
+document.getElementById('sign').disabled = false;
+}
+else{
+console.log("notmatch");
+document.getElementById('alertregname').innerHTML=`Username must be have atleast 5 letters`;
+document.getElementById('sign').disabled = true;
+}
+}
+
+
+
+function checkregphone(){
+console.log("entered into check name");
+var decimal= /^[2-9]{1}[0-9]{9}$/;
+const element=document.getElementById('inputPhone');
+const email=element.value;
+if(email.match(decimal)){
+console.log("match");
+document.getElementById('alertregphone').innerHTML=``;
+document.getElementById('sign').disabled = false;
+}
+else{
+console.log("notmatch");
+document.getElementById('alertregphone').innerHTML=`10 digit mobile number need to be entered`;
+document.getElementById('sign').disabled = true;
+}
+}
+
+
+
+function checkregpass(){
+console.log("entered into check name");
+var decimal= /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+const element=document.getElementById('inputPassword');
+const email=element.value;
+if(email.match(decimal)){
+console.log("match");
+document.getElementById('alertregpass').innerHTML=``;
+document.getElementById('sign').disabled = false;
+}
+else{
+console.log("notmatch");
+document.getElementById('alertregpass').innerHTML=`Password must have one uppercase, one number and one special character`;
+document.getElementById('sign').disabled = true;
+}
+}
+
+
+
 
 </script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+
+
+
+
 </body>
+
+
+
 </html>
