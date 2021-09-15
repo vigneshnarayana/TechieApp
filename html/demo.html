@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
   </head>
-  <body>
+  <body onload="loadPosts()">
     <nav class="navbar navbar-dark bg-success">
         <div class="row w-100">
   
@@ -24,7 +24,7 @@
                   
                  <span ><strong id="addtovalue"></strong></span>
             </div>
-            <button type="button" onclick="loadPosts()"> Search</button>
+            <!-- <button type="button" onclick="loadPosts()"> Search</button> -->
         </div>
     </nav>
     <div class="container flex justify-content-center mt-50 mb-50">
@@ -46,7 +46,7 @@
             console.log('entered into click');
                 
                       
-                    fetch("http://localhost:3005/addproduct")
+                    fetch("http://localhost:3005/addproduct/"+localStorage.getItem('id'))
                     .then(response => response.json())
                     .then(data => {
                         console.log(data)

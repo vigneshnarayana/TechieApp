@@ -30,7 +30,7 @@
             <option value="FR">Fruits</option>
             <option value="PL">Plants</option>
             <option value="DP">Dairy Products</option>
-            <option value="SP">Spices</option>
+            <!-- <option value="SP">Spices</option> -->
             <option value="NU">Nuts</option>
             </select>
          
@@ -176,10 +176,12 @@
               <option value="40">40Kg</option>
               <option value="50">50Kg</option>
               <option value="80">80Kg</option>
+              <option value="100">100Kg</option>
+              <option value="120">120Kg</option>
+              <option value="150">150Kg</option>
+              <option value="180">180Kg</option>
               <option value="200">200Kg</option>
              
-             
-               
                 </select>
           </div>
 
@@ -331,6 +333,7 @@ function postData(url = '', data = {}) {
 
          var types=$(".FR option:selected").val();
           $('#productprice').val(types)
+          localStorage.setItem('productname',$(".FR option:selected").text())
           }); 
 
           $('.VE').change(function() {

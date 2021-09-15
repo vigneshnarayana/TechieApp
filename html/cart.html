@@ -69,7 +69,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="row main align-items-center">
+                        <div class="row main align-items-center" id="item1">
                             <div class="col-2 d-flex justify-content-center">
                                 <img class="img-fluid" src="../static/cabbage.jfif">
                             </div>
@@ -80,10 +80,10 @@
                             <div class="col">
                                 <input type="number" id="itemNumber" value="1">
                             </div>
-                            <div class="col">₹ 56.00 <span class="close">&#10005;</span></div>
+                            <div class="col">₹ 56.00 <span class="close" id="demo1">&#10005;</span></div>
                         </div>
                     </div>
-                    <div class="row border-top border-bottom">
+                    <div class="row border-top border-bottom" id="item2">
                         <div class="row main align-items-center">
                             <div class="col-2 d-flex justify-content-center">
                                 <img class="img-fluid" src="../static/Almond.jfif">
@@ -95,10 +95,10 @@
                             <div class="col">
                                 <input type="number" id="itemNumber" value="1">
                             </div>
-                            <div class="col">₹ 200.00 <span class="close">&#10005;</span></div>
+                            <div class="col">₹ 200.00 <span class="close" id="demo2">&#10005;</span></div>
                         </div>
                     </div>
-                    <div class="row border-top border-bottom">
+                    <div class="row border-top border-bottom" id="item3">
                         <div class="row main align-items-center">
                             <div class="col-2 d-flex justify-content-center">
                                 <img class="img-fluid" src="../static/black-pepper.jpg">
@@ -110,11 +110,11 @@
                             <div class="col">
                                 <input type="number" id="itemNumber" value="1">
                             </div>
-                            <div class="col">₹ 50.00 <span class="close">&#10005;</span></div>
+                            <div class="col">₹ 50.00 <span class="close" id="demo3">&#10005;</span></div>
                         </div>
                     </div>
                     <div class="back-to-shop">
-                        <a href="shop.html">
+                        <a href="/html/Buyer.html">
                             <span class="text-muted">&leftarrow; Back to shop</span>
                         </a>
                     </div>
@@ -124,6 +124,12 @@
         </div>
     </div>
     </div>
+
+    <script>
+        $("#demo1").click(function(){
+            $("#item1").hide()
+        })
+    </script>
 </body>
 
 </html>
