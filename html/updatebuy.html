@@ -117,7 +117,7 @@
 
     function updatesellerDetails() {
         console.log('Hi');
-        alert("update");
+       // alert("update");
         debugger;
         const firstname = document.getElementById('firstname').value;
  
@@ -132,7 +132,7 @@
         const state = document.getElementById('state').value;
 
         if(mailid==""){
-             alert("Please update");
+             alert("Please update the details like Email");
          }
           else{
 
@@ -160,7 +160,7 @@
        .then(data => console.log(JSON.stringify(data)))
        .then(data =>{
         alert("Profile Updated Sucessfully");
-        window.location="/html/product.html";
+        window.location="/html/Buyer.html";
        })
          .catch(error => console.log(error));
         }

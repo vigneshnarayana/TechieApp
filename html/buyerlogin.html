@@ -48,7 +48,7 @@
                         <input type="submit" value="Sign in" name="" onclick="loginClick()">
                     </div>
                     <div class="inputBx">
-                        <p>Don't have an acount? <a href="/html/buyersignup.html">Sign up</a></p>
+                        <p>Don't have an account? <a href="/html/buyersignup.html">Sign up</a></p>
                     </div>
                 </form>
             </div>
@@ -76,7 +76,7 @@
                 var valu=JSON.stringify(data);
                     if(data[0].email == email && data[0].password == password){
 
-                          alert("login sucess" ); 
+                      
                           debugger;
                           localStorage.setItem('idb',data[0]._id);
                           localStorage.setItem('firstnameb',data[0].firstname);

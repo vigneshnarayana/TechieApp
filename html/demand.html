@@ -13,25 +13,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body>
+  <body onload="loadPosts()">
       <!-- As a link -->
 
 <nav class="navbar " style="background-color: darkgreen;">
     <div class="container-fluid">
       <p style="color:#ffff;"><a class="navbar-brand" href="./product.html">BACK</a></p>
     </div>
-    <div class="container col-3">
+    <div class="container col-4">
       <span class="navbar-brand mb-0 h1 center" style=" color: aliceblue;">WELCOME TO VIEW PRODUCTS</span>
     </div>
  
   </nav>
 
    
-  <div class="container col-4">
+  <div class="container col-3">
     <form class="example" action="action_page.php">
-      <button type="button" style="background-color: rgb(196, 214, 196); " onclick="loadPosts()" ><strong>Search-   -</strong><i class="fa fa-search"></i></button>
       <button type="button" id="btnGet" style="text-align: right;"><strong>DELETE</strong></button>
-      <a href="/html/demo.html">  <button type="button" id="preview" target="_blank"><strong>Pre View</strong> </button></a>
+      <a href="/html/demo.html">  <button type="button" id="preview" ><strong>Pre View</strong> </button></a>
      
     </form>
 
@@ -43,7 +42,7 @@
       <th>Product Id</th>
       <th>Product Name</th>
   
-      <th>Product Imageurl</th>
+      <th>Product Image</th>
       <th>Product Price</th>
       <th>Quantity</th>
       <th>Overall Price</th>
@@ -147,7 +146,7 @@
           $("#Table1 input[type=checkbox]:checked").each(function () {
               var row = $(this).closest("tr")[0];
         
-               alert (row.cells[2].innerHTML)
+               //alert (row.cells[2].innerHTML)
                var data=row.cells[2].innerHTML;
                var peoductidss= 'http://localhost:3005/addproduct/'+data.trim();
 
@@ -161,7 +160,10 @@
                 if (result.errors)
                     alert(result.errors[0].message);
                 else
-                   alert("sucess")
+                  {
+                    loadPosts();
+                  }
+                   //alert("Deleted Sucess")
             }
         });
                //////////////////////////////////////

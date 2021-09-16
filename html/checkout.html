@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     <script src="../js/checkout.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+</script>
 </head>
 
 <body>
@@ -121,6 +124,15 @@
             </div>
         </div>
     </div>
+    <script>
+        var firstname=localStorage.getItem('firstnameb');
+        var lastname=localStorage.getItem('lastnameb');
+        var mailid=localStorage.getItem('mailidb');
+        $("#firstName").val(firstname)
+        $("#lastName").val(lastname)
+        $("email").val(mailid)
+
+    </script>
 </body>
 
 </html>
