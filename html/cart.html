@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -15,6 +17,14 @@
                 <a href="#" class="navbar-brand mr-3">
                     <img src="/static/logo.png" style="width: 150px;">
                 </a>
+            </div>
+            
+            <div class="">
+                <!-- <a href="#" class="nav-item nav-link " onclick="location.href='/html/home.html';"
+                    style="color:white;">Home</a>
+                <a href="#" class="nav-item nav-link " onclick="location.href='/html/sellersignup.html';"
+                    style="color:white;">Sign up</a> -->
+                <a href="#" class="nav-item nav-link active" style="color:white; text-align: center; "><h2>CART</h2></a>
             </div>
             <div class="col row align-items-center">
                 <!-- <a href="#" class="nav-item nav-link " onclick="location.href='/html/home.html';"
@@ -80,7 +90,7 @@
                             <div class="col">
                                 <input type="number" id="itemNumber" value="1">
                             </div>
-                            <div class="col">₹ 200.99 <span class="close" id="demo1">&#10005;</span></div>
+                            <div class="col"><p id="datavalue">₹ 200.99 </p><span class="close" id="demo1">&#10005;</span></div>
                         </div>
                     </div>
                     <div class="row border-top border-bottom" id="item2">
@@ -129,6 +139,13 @@
         $("#demo1").click(function(){
             $("#item1").hide()
         })
+        $("#demo2").click(function(){
+            $("#item2").hide()
+        })
+        $("#demo3").click(function(){
+            $("#item3").hide()
+        })
+
     </script>
 </body>
 

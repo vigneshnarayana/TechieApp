@@ -10,7 +10,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+             $(".alert").hide()
+    </script>
+     <style>
+        .alert {
+          padding: 20px;
+          background-color: #f44336;
+          color: white;
+        }
+        
+        .closebtn {
+          margin-left: 15px;
+          color: white;
+          font-weight: bold;
+          float: right;
+          font-size: 22px;
+          line-height: 20px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        
+        .closebtn:hover {
+          color: black;
+        }
+        </style>
     <link rel="stylesheet" href="/css/buyerlogin.css">
     <title>Ecommerce for Agricultural Product!!!</title>
  </head>
@@ -31,6 +56,10 @@
         <a href="/html/buyersignup.html" class="nav-item nav-link active" style="color:white;">Sign Up</a>
         </div>
         </nav>
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <p style="text-align: center;"> <strong id="popup"></strong></p>
+          </div>
     <section>
         <div class="container-fluid contentBx">
             <div class="formBx">
@@ -55,9 +84,8 @@
         </div>
     </section>
     <script type="text/javascript">
-
-
-        
+          $(".alert").hide()
+          
         function loginClick(){
             console.log('entered into click');
            
@@ -89,7 +117,9 @@
                          window.location="/html/Buyer.html";
                       }
                       else{
-                          alert("login Failed")
+                          
+                        $(".alert").show()
+                                  $("#popup").text("login Failed")
                       }   
                       
             });
